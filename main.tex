@@ -1,14 +1,61 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+\documentclass[a4paper,
+  twoside, % two have to sided mode (odd and even page numbers)
+  headlines=2.1 % number of lines in the heading, increase if you want more
+  ]{scrartcl}
 
-\title{MST - High Aspect Ratio MEMS}
-\author{Marc Johannes Aslan}
+% Packages
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{siunitx}
+\usepackage{lipsum}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{lmodern}
+\usepackage[automark,headsepline]{scrlayer-scrpage}
+
+% Commands
+\setlength{\parskip}{1em}
+\setlength\parindent{0pt}
+
+\newcommand{\yourname}{Marc Johannes Aslan \and Thomas Kötzner}
+\newcommand{\headingname}{Marc Johannes Aslan, Thomas Kötzner}
+\newcommand{\lecture}{MST Technologies and Processes, Assignments, course winter semester 2018/2019}
+\author{\yourname}
+\title{\lecture}
+
+\pagestyle{scrheadings}
+\setkomafont{pagehead}{\normalfont}
+\lohead{\lecture\\\today}
+\lehead{\lecture\\\today}
+\rohead{\\}
+\rehead{\\}
+
+\title{MST Technolgies and Processes}
+\subtitle{Assignement \#2: High aspect ratio MEMS}
+\date{\today}
+\author{Thomas Kötzner, Marc Johannes Aslan}
 \date{January 2019}
 
 \begin{document}
 
 \maketitle
 
+\section{Task}
+Briefly state the task of the assignment.
 \section{Introduction}
+High aspect ratio MEMS devices are required for a number of common applications
+\begin{itemize}
+    \item What is the background of the assignment?
+    \item What will be presented and which basics are required to understand it?
+\end{itemize}
+\section{Applications}
+\section{Fabrication methods}
+\subsection{Metals}
+\subsection{Polymers}
+\subsection{Semiconductor materials}
+
+\section{Conclusion}
+
 
 \end{document}
